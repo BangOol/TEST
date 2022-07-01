@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<!--bean 생성이 일종의 객체 선언? 과 같다.-->
+	<!-- <bean id = "logAdvice" class = "com.yedam.myserver.common.LogAdvice"/>
+	<bean id="afterLog" class= "com.yedam.myserver.common.AfterLog"/>
+	<bean id = "AroundAdvice" class= "com.yedam.myserver.common.AroundAdvice"></bean>
+	bean 등록
+	<aop:config>
+		<aop:pointcut expression="execution(* com.yedam..*Impl.*(..))" id="allpointcut"/>
+		<aop:pointcut expression="execution(* com.yedam..*Impl.*(..)).find*(..))" id="findpointcut"/>
+		pointcut, logadvice 묶는 과정 필요. 이로소 여러 번 controller에서 printLog()를 호출할 필요 x
+		<aop:aspect ref="logAdvice"> 
+		logAdvice와 연동시킬 준비 : ref
+			<aop:before method="pringLog" pointcut-ref="allpointcut"/>
+		</aop:aspect>
+		<aop:aspect ref="afterLog">
+			<aop:after-returning method="pringLog" pointcut-ref="findpointcut" returning="obj"/>
+		</aop:aspect>
+		<aop:aspect ref ="AroundAdvice">
+			<aop:around method="aroundLog" pointcut-ref="allpointcut"/>
+		</aop:aspect>
+		
+	</aop:config>
+ -->
+ 
+ 
+</beans>
